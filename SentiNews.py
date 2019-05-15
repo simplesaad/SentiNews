@@ -93,4 +93,4 @@ data = pd.read_excel("Quartz_India.xlsx")
 
 data['Polarity Article'] = data.apply(lambda x: TextBlob(x['Article']).sentiment.polarity, axis=1)
 
-data.to_excel("Sentiment_Analysis.xlsx")
+data.to_excel("Sentiment_Analysis.xlsx",index = False)
